@@ -6,8 +6,8 @@ Version 0.1.0-alpha.3 is an Alpha preview. This preview was tested on Zotero 10.
 
 ## Install
 
-1. Download the XPI from the [0.1.0-alpha.3 release](https://github.com/mizumoto-cn/zotero-rainbow/releases/tag/v0.1.0-alpha.3).
-2. In Zotero, open **Tools → Plugins** and install the downloaded XPI file.
+1. Build the XPI using the steps below. Published XPI files will be available on the [Releases page](https://github.com/mizumoto-cn/zotero-rainbow/releases).
+2. In Zotero, open **Tools → Plugins** and install the XPI file.
 
 Alpha updates are manual. To update, install the newer XPI the same way.
 
@@ -18,6 +18,8 @@ Alpha updates are manual. To update, install the newer XPI the same way.
 3. Double-click the sentence you are reading.
 4. Press **↑ / ↓** to move to the previous or next sentence. **Settings → Rainbow** also offers **[ / ]** for these moves.
 5. Press **Esc** to clear the focus.
+
+While Rainbow sentence focus is enabled, its double-click gesture in PDF Reading Mode may conflict with features or plugins that also use double-click to mark text.
 
 ## Privacy
 
