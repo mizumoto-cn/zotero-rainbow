@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "zotero-plugin.config.ts"
+  ]
+}

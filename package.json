@@ -1,0 +1,34 @@
+{
+  "name": "zotero-rainbow-bionic",
+  "version": "0.1.0-alpha.3",
+  "private": true,
+  "type": "module",
+  "description": "Experimental, local-only Rainbow sentence focus for native PDF Reading Mode in Zotero 10.",
+  "author": "RainbowBionic contributors",
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">=22"
+  },
+  "config": {
+    "addonName": "Rainbow for Zotero",
+    "addonID": "rainbowbionic@local.invalid",
+    "addonRef": "rainbowbionic",
+    "addonInstance": "RainbowBionic",
+    "prefsPrefix": "extensions.zotero.rainbowbionic"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck:tooling": "tsc -p tsconfig.tooling.json --noEmit",
+    "build": "npm run typecheck && npm run typecheck:tooling && zotero-plugin build",
+    "start": "zotero-plugin serve"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "zotero-plugin-scaffold": "0.8.2",
+    "@types/node": "22.15.30"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizumoto-cn/zotero-rainbow.git"
+  }
+}

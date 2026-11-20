@@ -1,0 +1,13 @@
+node_modules/
+.scaffold/
+.test-build/
+.offline/
+.env
+*.log
+__pycache__/
+tmp/
+artifacts/*.png
+artifacts/*.json
+artifacts/*.xpi
+artifacts/*.tap
+artifacts/research/

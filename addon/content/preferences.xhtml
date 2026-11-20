@@ -1,0 +1,23 @@
+<vbox id="rainbowbionic-preferences-root"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      onload="Zotero.RainbowBionic?.mountPreferences(window)">
+  <groupbox>
+    <html:h2>Rainbow for Zotero — experimental</html:h2>
+    <html:p>Rainbow sentence focus is off by default and works only in native PDF Reading Mode.</html:p>
+    <html:label><html:input type="checkbox" data-rb-pref="rainbowEnabled"/> Enable Rainbow sentence focus</html:label>
+    <html:p><html:label>Sentence navigation keys:
+      <html:select data-rb-pref="rainbowKeyboardPreset">
+        <html:option value="arrows">↑ / ↓ (previous / next)</html:option>
+        <html:option value="brackets">[ / ] (previous / next)</html:option>
+      </html:select>
+    </html:label></html:p>
+    <html:p>Double-click text to give its sentence a subtle background. Use the selected keys to move to the previous or next sentence; Escape clears the focus.</html:p>
+    <html:p>The focus is a temporary highlight only. Document text, the PDF, annotations and reader settings are not changed. Formulas, tables, figures and references are skipped. There are no reading-speed or medical claims.</html:p>
+  </groupbox>
+  <groupbox>
+    <html:h2>Diagnostics</html:h2>
+    <html:p><html:button id="rainbowbionic-refresh-status" type="button">Refresh diagnostics</html:button></html:p>
+    <html:pre id="rainbowbionic-status" style="white-space:pre-wrap;overflow-wrap:anywhere;max-width:70ch;">Loading status…</html:pre>
+  </groupbox>
+</vbox>
